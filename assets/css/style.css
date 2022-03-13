@@ -1,0 +1,25 @@
+/*General Settings*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #2F4F4F;/*darkslategray*/   /*rgb(47, 79, 79)*/
+    --secondary-color: #F5F5F5;/*whitesmoke*/   /*rgb(245, 245, 245)*/
+    --tertiary-color: #1B1A1A;  /*charcoal*/   /*rgb(27, 26, 26)*/
+}
+body {
+    color: whitesmoke;
+    font-family: Noto Sans, sans-serif;
+}
+header {
+    padding: 30px 35px;
+    background-color: rgb(27,26,26,);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background-image: url("../images/profile-background.JPG");
+
+}
