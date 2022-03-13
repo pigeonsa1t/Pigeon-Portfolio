@@ -7,22 +7,23 @@
 }
 :root {
     --primary-color: #2F4F4F;
-        /*darkslategray*/   /*rgb(47, 79, 79)*/
+/*darkslategray*/   /*rgb(47, 79, 79)*/
     --secondary-color: #F5F5F5;
-        /*whitesmoke*/   /*rgb(245, 245, 245)*/
+/*whitesmoke*/   /*rgb(245, 245, 245)*/
     --tertiary-color: #1B1A1A;  
-        /*charcoal*/   /*rgb(27, 26, 26)*/
+/*charcoal*/   /*rgb(27, 26, 26)*/
 }
+
 body {
     color: #F5F5F5;
     font-family: Noto Sans, sans-serif;
     background-color: #1B1A1A;;
+    margin: 0;
 }
 
 /*Header Start*/
-
 header {
-    padding: 30px 35px;
+    padding: 15px 15px;
     background-color: #2F4F4F;
     display: flex;
     justify-content: space-between;
@@ -41,6 +42,7 @@ header h1 ul li {
     font-size: 15px;
     font-weight: lighter;
 }
+    /*Nav Start*/
 header nav {
     margin: 9px 0;
 }
@@ -54,30 +56,49 @@ header nav ul {
 header nav ul li a {
     padding: 9px 13px;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 24px;
     color: #F5F5F5;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-decoration: none;
 }
-/*
+    /*Nav End*/
+/*Header End*/
 
-CLASS LISTS
+/*About Me Start*/
+.hero {
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-position: 80%;
+}
+.about-me {
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    color: #1B1A1A;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.about-me h2 {
 
-class="about-me"
-class="about-text"
-class="profile-picture"
-class="about-links"
+}
 
-section class="projects:"
-h3:
+
+
+
+
+/*CLASS LISTS
+class="hero"
+class="about-me"              
+    section class="projects:"
+    h3:
     class="run-buddy"
-    class="main-text"
-    
-h4:
+    class="main-text"    
+    h4:
     class="robot-gladiators"
     class="project-3"
     class="project-4"
     class="main-text"
-
-class="contact-me"
-
-*/
+class="contact-me"*/
