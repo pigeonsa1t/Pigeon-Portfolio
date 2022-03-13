@@ -12,14 +12,42 @@
 body {
     color: whitesmoke;
     font-family: Noto Sans, sans-serif;
+    background-color: #1B1A1A;;
 }
 header {
     padding: 30px 35px;
-    background-color: rgb(27,26,26,);
+    background-color: #2F4F4F;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    background-image: url("../images/profile-background.JPG");
+}
+header h1 {
+    font-size: 16x;
+    font-weight: lighter;
 
+}
+header h1 ul {
+    padding-left: 30px;
+}
+header h1 ul li {
+    font-size: 15px;
+    font-weight: lighter;
+}
+header nav {
+    margin: 9px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 9px 13px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: #F5F5F5;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
