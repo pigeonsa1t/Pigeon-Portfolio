@@ -51,3 +51,26 @@ header nav ul li a {
     color: #F5F5F5;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+/*
+CLASS LISTS
+
+class="about-me"
+class="about-text"
+class="profile-picture"
+class="about-links"
+
+section class="projects:"
+h3:
+    class="run-buddy"
+    class="main-text"
+    
+h4:
+    class="robot-gladiators"
+    class="project-3"
+    class="project-4"
+    class="main-text"
+
+class="contact-me"
+
+*/
