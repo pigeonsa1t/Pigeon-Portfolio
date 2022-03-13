@@ -1,19 +1,26 @@
 /*General Settings*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 :root {
-    --primary-color: #2F4F4F;/*darkslategray*/   /*rgb(47, 79, 79)*/
-    --secondary-color: #F5F5F5;/*whitesmoke*/   /*rgb(245, 245, 245)*/
-    --tertiary-color: #1B1A1A;  /*charcoal*/   /*rgb(27, 26, 26)*/
+    --primary-color: #2F4F4F;
+        /*darkslategray*/   /*rgb(47, 79, 79)*/
+    --secondary-color: #F5F5F5;
+        /*whitesmoke*/   /*rgb(245, 245, 245)*/
+    --tertiary-color: #1B1A1A;  
+        /*charcoal*/   /*rgb(27, 26, 26)*/
 }
 body {
-    color: whitesmoke;
+    color: #F5F5F5;
     font-family: Noto Sans, sans-serif;
     background-color: #1B1A1A;;
 }
+
+/*Header Start*/
+
 header {
     padding: 30px 35px;
     background-color: #2F4F4F;
@@ -25,7 +32,7 @@ header {
 header h1 {
     font-size: 16x;
     font-weight: lighter;
-
+    padding: 10px;
 }
 header h1 ul {
     padding-left: 30px;
@@ -47,12 +54,12 @@ header nav ul {
 header nav ul li a {
     padding: 9px 13px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 30px;
     color: #F5F5F5;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
 /*
+
 CLASS LISTS
 
 class="about-me"
