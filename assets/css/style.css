@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-weight: lighter;
+    margin: auto;
 }
 :root {
     --primary-color: #2F4F4F;
@@ -14,30 +15,29 @@
 body {
     font-family: Noto Sans, sans-serif;
     text-align: left;
+    background-color: #1B1A1A;
 }
 
 /*Header Start*/
 header {
-    color: #F5F5F5;;
-    margin: 0;
+    color: #F5F5F5;
     background-color: #2F4F4F;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    background-size: cover;
 }
 header h1 {
-    margin: 5px;
-    padding: 5px;
+    padding: 20px;
     text-align: left;
 }
-
-
     /*Nav Start*/
 header nav {
     padding: 10px;
+    margin: auto;
+    text-align: right;
 }
 header nav ul {
     display: flex;
@@ -58,12 +58,22 @@ header nav ul li a {
     /*Nav End*/
 /*Header End*/
 
+/*Footer Start*/
+footer {
+    padding: 10px;
+    margin-top: 20px;
+    background: #2F4F4F;
+    padding: auto;
+    text-align: center;
+}
+/*Footer End*/
+
 /*About Me Start*/
 .about-me {
     color: #F5F5F5;;
     background-color: #1B1A1A;
     background-size: cover;
-    border-top: #F5F5F5 5px;
+    margin-top: 5px;
     display: flex;
     padding: 5px 5px 10px 5px;
 }
@@ -137,7 +147,7 @@ class="contact-me"
 /*Media Query for Smaller Desktop Screens*/
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
+        padding-bottom: auto;
         justify-content: center;
         position: relative;
     }
@@ -201,9 +211,7 @@ class="contact-me"
 
 /*Media Query for Mobile/Smaller*/
 @media screen and (max-width: 575px) {
-    .hero-form button {
-        width: 100%;
-    }
+
     .section-title {
         width: 95%;
     }
@@ -216,10 +224,10 @@ class="contact-me"
     .contact-info {
         text-align: center;
     }
-    .contact-info > * {
+    .about-text > * {
         flex: 0 100%;
     }
-    .contact-form {
+    .about-me {
         order: 3;
     }
 }
