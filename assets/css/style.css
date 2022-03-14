@@ -1,0 +1,228 @@
+/*General Settings*/
+* {
+    box-sizing: border-box;
+    font-weight: lighter;
+}
+:root {
+    --primary-color: #2F4F4F;
+/*darkslategray*/   /*rgb(47, 79, 79)*/
+    --secondary-color: #F5F5F5;
+/*whitesmoke*/   /*rgb(245, 245, 245)*/
+    --tertiary-color: #1B1A1A;  
+/*charcoal*/   /*rgb(27, 26, 26)*/
+}
+body {
+    font-family: Noto Sans, sans-serif;
+    text-align: left;
+}
+
+/*Header Start*/
+header {
+    color: #F5F5F5;;
+    margin: 0;
+    background-color: #2F4F4F;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+header h1 {
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+header h1 ul {
+    font-size: 16px;
+    padding-left: 5px 5px;
+}
+
+    /*Nav Start*/
+header nav {
+    padding: 10px;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 15px;
+}
+header nav ul li a {
+    padding: 9px 13px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #F5F5F5;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+    /*Nav End*/
+/*Header End*/
+
+/*About Me Start*/
+.about {
+    color: #F5F5F5;;
+    background-color: #1B1A1A;
+    background-size: cover;
+    border: 6px solid #F5F5F5;
+    display: flex;
+    padding: 5px 5px 10px 5px;
+}
+.about-text {
+    line-height: 1.5;
+    padding: 10px;
+}
+.about-text h2 {
+    font-size: 27px;
+}
+.about-link {
+    font-size: 15px;    
+}
+.about-link h3 {
+    font-size: 18px;
+}
+.about-link ul li a {
+    padding: 3px;
+    background-position: 80%;  
+}
+.about-img {
+    padding: 10px 10px 0 10px;
+}
+/*About Me End*/
+
+/*Projects Start*/
+.projects {
+    background-color: #F5F5F5;
+    margin: 15px;
+    border: #1B1A1A solid 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projects article {
+    padding: 5px;
+    margin: 5px;
+}
+/*Projects End*/
+
+/*Contact Me Start*/
+.contact {
+    background-color: #2F4F4F;
+}
+.contact h2 {
+    font-size: 30px;
+}
+.contact address {
+    margin: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+}
+/*Contact Me End*/
+
+
+/*CLASS LISTS
+class="about"
+class="about-me"              
+    section class="projects:"
+    h3:
+    class="run-buddy"
+    class="main-text"    
+    h4:
+    class="robot-gladiators"
+    class="project-3"
+    class="project-4"
+    class="main-text"
+class="contact-me"*/
+
+/*Media Query for Smaller Desktop Screens*/
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+    .hero-cta {
+        text-align: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+}
+
+/*Media Query for Tablets/Smaller*/
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+}
+
+/*Media Query for Mobile/Smaller*/
+@media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
+}
